@@ -12,7 +12,7 @@ print_string:
         popa; regs off stack
         ret; end
 
-print_hex:
+print_binary:
     pusha
-    mov ah, 0x0e; scrolling teletype bios routine
     popa
+    ret
