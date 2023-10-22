@@ -1,12 +1,10 @@
 [org 0x7c00]
-    mov dx, TEST_NUM
-    call print_binary
+    mov dx, 0x2ecd
+    call print_hex
     jmp $
 
 %include "print.nasm"   
-
-TEST_NUM:
-    db 0x1001
+;Data 
 
 ; Padding and magic number.
 times 510 -($-$$) db 0
