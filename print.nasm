@@ -47,7 +47,7 @@ byte_to_string:
 
 ;data
 HEX_TABLE:
-    db "0123456789abcdzf", 0
+    db "0123456789abcdef", 0
 
 HEX_STRING:
     resb 50
