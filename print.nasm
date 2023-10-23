@@ -6,7 +6,7 @@ print_string:
         cmp al, 0; if the current char is 0, 
         je end; the string ends
         int 0x10; video services interrupt
-        inc bx ; increment b by one
+        add bx, 1; increment b by one
         jmp loop; loop back round
     end:
         popa; regs off stack
